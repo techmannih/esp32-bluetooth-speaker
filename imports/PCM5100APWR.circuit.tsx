@@ -26,24 +26,38 @@ const pinLabels = {
 export const PCM5100APWR = (props: ChipProps<typeof pinLabels>) => {
 	return (
 		<chip
-			schWidth={2.4}
-			schHeight={3.8}
+			schWidth={1.9}
+			schHeight={2}
 			schPinArrangement={{
 				leftSide: {
 					direction: "top-to-bottom",
-					pins: ["LRCK", "DIN", "BCK", "SCK", "FLT", "DEMP", "XSMT", "FMT"],
+					pins: [
+						"LRCK",
+						"DIN",
+						"BCK",
+						"SCK",
+						"FLT",
+						"DEMP",
+						"XSMT",
+						"FMT",
+						"CPVDD",
+						"DVDD",
+					],
 				},
 				rightSide: {
 					direction: "top-to-bottom",
-					pins: ["OUTL", "OUTR", "CAPP", "CAPM", "VNEG", "LDOO"],
-				},
-				topSide: {
-					direction: "left-to-right",
-					pins: ["CPVDD", "DVDD", "AVDD"],
-				},
-				bottomSide: {
-					direction: "left-to-right",
-					pins: ["CPGND", "DGND", "AGND"],
+					pins: [
+						"OUTL",
+						"OUTR",
+						"CAPP",
+						"CAPM",
+						"VNEG",
+						"LDOO",
+						"AVDD",
+						"AGND",
+						"CPGND",
+						"DGND",
+					],
 				},
 			}}
 			pinLabels={pinLabels}

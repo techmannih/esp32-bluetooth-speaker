@@ -39,8 +39,8 @@ const pinLabels = {
 export const TPA3116D2DAD = (props: ChipProps<typeof pinLabels>) => {
 	return (
 		<chip
-			schWidth={3.2}
-			schHeight={5.8}
+			schWidth={2.2}
+			schHeight={3.4}
 			schPinArrangement={{
 				leftSide: {
 					direction: "top-to-bottom",
@@ -82,9 +82,9 @@ export const TPA3116D2DAD = (props: ChipProps<typeof pinLabels>) => {
 						"PVCC3",
 						"PVCC4",
 						"AVCC",
+						"POWERPAD",
 					],
 				},
-				bottomSide: { direction: "left-to-right", pins: ["POWERPAD"] },
 			}}
 			pinLabels={pinLabels}
 			supplierPartNumbers={{

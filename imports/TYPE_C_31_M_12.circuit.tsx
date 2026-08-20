@@ -22,18 +22,17 @@ const pinLabels = {
 export const TYPE_C_31_M_12 = (props: ChipProps<typeof pinLabels>) => {
 	return (
 		<connector
-			schWidth={2.8}
-			schHeight={4.2}
+			schWidth={1.8}
+			schHeight={1.6}
 			schPinArrangement={{
 				leftSide: {
 					direction: "top-to-bottom",
-					pins: ["A5", "B5", "A6", "B6", "A7", "B7"],
+					pins: ["A5", "B5", "A6", "B6", "A7", "B7", "A8", "B8"],
 				},
 				rightSide: {
 					direction: "top-to-bottom",
 					pins: ["A4B9", "B4A9", "A1B12", "B1A12", "EH1", "EH2", "EH3", "EH4"],
 				},
-				bottomSide: { direction: "left-to-right", pins: ["A8", "B8"] },
 			}}
 			pinLabels={pinLabels}
 			supplierPartNumbers={{

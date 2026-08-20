@@ -11,6 +11,7 @@ const pinLabels = {
 export const XC6220B331MR = (props: ChipProps<typeof pinLabels>) => {
 	return (
 		<chip
+			schHeight={0.6}
 			schPinArrangement={{
 				leftSide: { direction: "top-to-bottom", pins: ["VIN", "CE", "VSS"] },
 				rightSide: { direction: "top-to-bottom", pins: ["VOUT", "NC"] },

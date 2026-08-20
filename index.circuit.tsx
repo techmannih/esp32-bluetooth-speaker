@@ -29,8 +29,8 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 		thickness="1.58mm"
 		material="fr4"
 		layers={4}
+		isViaInPadAllowed
 		solderMaskColor="#176b43"
-		placementDrcChecksDisabled
 	>
 		<schematicsheet
 			name="amplifier_core"
@@ -89,36 +89,45 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			pinLabels={{ pin1: ["MOUNT"] }}
 			footprint="platedhole_d2.2mm_pd4.4mm"
 			name="H1"
-			pcbX={59.79}
-			pcbY={20.8196}
+			pcbX={59.44}
+			pcbY={20.4696}
 			pcbRotation={0}
 			schSheetName="mechanical"
 			schX={0}
 			schY={2.286}
+			connections={{
+				pin1: "net.GND",
+			}}
 		/>
 		<chip
 			manufacturerPartNumber="MountingHole_Pad_2.2mm"
 			pinLabels={{ pin1: ["MOUNT"] }}
 			footprint="platedhole_d2.2mm_pd4.4mm"
 			name="H2"
-			pcbX={59.66}
-			pcbY={-20.7204}
+			pcbX={59.31}
+			pcbY={-20.3704}
 			pcbRotation={0}
 			schSheetName="mechanical"
 			schX={0}
 			schY={0.762}
+			connections={{
+				pin1: "net.GND",
+			}}
 		/>
 		<chip
 			manufacturerPartNumber="MountingHole_Pad_2.2mm"
 			pinLabels={{ pin1: ["MOUNT"] }}
 			footprint="platedhole_d2.2mm_pd4.4mm"
 			name="H3"
-			pcbX={-59.67}
-			pcbY={-21.0304}
+			pcbX={-59.32}
+			pcbY={-20.6804}
 			pcbRotation={0}
 			schSheetName="mechanical"
 			schX={0}
 			schY={-0.762}
+			connections={{
+				pin1: "net.GND",
+			}}
 		/>
 		<chip
 			manufacturerPartNumber="MountingHole_Pad_2.2mm"
@@ -135,127 +144,6 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 				pin1: "net.GND",
 			}}
 		/>
-
-		<group name="H1_STITCHING" pcbX={59.79} pcbY={20.8196}>
-			<via pcbX={-1.65} pcbY={0} outerDiameter="0.7mm" holeDiameter="0.4mm" />
-			<via
-				pcbX={-1.166726}
-				pcbY={-1.166726}
-				outerDiameter="0.7mm"
-				holeDiameter="0.4mm"
-			/>
-			<via
-				pcbX={-1.166726}
-				pcbY={1.166726}
-				outerDiameter="0.7mm"
-				holeDiameter="0.4mm"
-			/>
-			<via pcbX={0} pcbY={-1.65} outerDiameter="0.7mm" holeDiameter="0.4mm" />
-			<via pcbX={0} pcbY={1.65} outerDiameter="0.7mm" holeDiameter="0.4mm" />
-			<via
-				pcbX={1.166726}
-				pcbY={-1.166726}
-				outerDiameter="0.7mm"
-				holeDiameter="0.4mm"
-			/>
-			<via
-				pcbX={1.166726}
-				pcbY={1.166726}
-				outerDiameter="0.7mm"
-				holeDiameter="0.4mm"
-			/>
-			<via pcbX={1.65} pcbY={0} outerDiameter="0.7mm" holeDiameter="0.4mm" />
-		</group>
-		<group name="H2_STITCHING" pcbX={59.66} pcbY={-20.7204}>
-			<via pcbX={-1.65} pcbY={0} outerDiameter="0.7mm" holeDiameter="0.4mm" />
-			<via
-				pcbX={-1.166726}
-				pcbY={-1.166726}
-				outerDiameter="0.7mm"
-				holeDiameter="0.4mm"
-			/>
-			<via
-				pcbX={-1.166726}
-				pcbY={1.166726}
-				outerDiameter="0.7mm"
-				holeDiameter="0.4mm"
-			/>
-			<via pcbX={0} pcbY={-1.65} outerDiameter="0.7mm" holeDiameter="0.4mm" />
-			<via pcbX={0} pcbY={1.65} outerDiameter="0.7mm" holeDiameter="0.4mm" />
-			<via
-				pcbX={1.166726}
-				pcbY={-1.166726}
-				outerDiameter="0.7mm"
-				holeDiameter="0.4mm"
-			/>
-			<via
-				pcbX={1.166726}
-				pcbY={1.166726}
-				outerDiameter="0.7mm"
-				holeDiameter="0.4mm"
-			/>
-			<via pcbX={1.65} pcbY={0} outerDiameter="0.7mm" holeDiameter="0.4mm" />
-		</group>
-		<group name="H3_STITCHING" pcbX={-59.67} pcbY={-21.0304}>
-			<via pcbX={-1.65} pcbY={0} outerDiameter="0.7mm" holeDiameter="0.4mm" />
-			<via
-				pcbX={-1.166726}
-				pcbY={-1.166726}
-				outerDiameter="0.7mm"
-				holeDiameter="0.4mm"
-			/>
-			<via
-				pcbX={-1.166726}
-				pcbY={1.166726}
-				outerDiameter="0.7mm"
-				holeDiameter="0.4mm"
-			/>
-			<via pcbX={0} pcbY={-1.65} outerDiameter="0.7mm" holeDiameter="0.4mm" />
-			<via pcbX={0} pcbY={1.65} outerDiameter="0.7mm" holeDiameter="0.4mm" />
-			<via
-				pcbX={1.166726}
-				pcbY={-1.166726}
-				outerDiameter="0.7mm"
-				holeDiameter="0.4mm"
-			/>
-			<via
-				pcbX={1.166726}
-				pcbY={1.166726}
-				outerDiameter="0.7mm"
-				holeDiameter="0.4mm"
-			/>
-			<via pcbX={1.65} pcbY={0} outerDiameter="0.7mm" holeDiameter="0.4mm" />
-		</group>
-		<group name="H4_STITCHING" pcbX={-59.59} pcbY={20.5096}>
-			<via pcbX={-1.65} pcbY={0} outerDiameter="0.7mm" holeDiameter="0.4mm" />
-			<via
-				pcbX={-1.166726}
-				pcbY={-1.166726}
-				outerDiameter="0.7mm"
-				holeDiameter="0.4mm"
-			/>
-			<via
-				pcbX={-1.166726}
-				pcbY={1.166726}
-				outerDiameter="0.7mm"
-				holeDiameter="0.4mm"
-			/>
-			<via pcbX={0} pcbY={-1.65} outerDiameter="0.7mm" holeDiameter="0.4mm" />
-			<via pcbX={0} pcbY={1.65} outerDiameter="0.7mm" holeDiameter="0.4mm" />
-			<via
-				pcbX={1.166726}
-				pcbY={-1.166726}
-				outerDiameter="0.7mm"
-				holeDiameter="0.4mm"
-			/>
-			<via
-				pcbX={1.166726}
-				pcbY={1.166726}
-				outerDiameter="0.7mm"
-				holeDiameter="0.4mm"
-			/>
-			<via pcbX={1.65} pcbY={0} outerDiameter="0.7mm" holeDiameter="0.4mm" />
-		</group>
 
 		{/* Class-D stereo amplifier */}
 		<TPA3116D2DAD
@@ -336,8 +224,8 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 					"https://www.we-online.com/components/products/download/Download_WE-PD_1260_STP%20%28rev1%29.stp",
 			}}
 			name="L1"
-			pcbX={-10.345}
-			pcbY={8.6246}
+			pcbX={-10.745}
+			pcbY={9.6246}
 			pcbRotation={90}
 			schSheetName="amplifier_output"
 			schX={-4.2448}
@@ -356,7 +244,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 					"https://www.we-online.com/components/products/download/Download_WE-PD_1260_STP%20%28rev1%29.stp",
 			}}
 			name="L2"
-			pcbX={2.705}
+			pcbX={3.105}
 			pcbY={-8.3254}
 			pcbRotation={-90}
 			schSheetName="amplifier_output"
@@ -376,7 +264,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 					"https://www.we-online.com/components/products/download/Download_WE-PD_1260_STP%20%28rev1%29.stp",
 			}}
 			name="L3"
-			pcbX={2.53}
+			pcbX={2.93}
 			pcbY={8.6246}
 			pcbRotation={90}
 			schSheetName="amplifier_output"
@@ -396,8 +284,8 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 					"https://www.we-online.com/components/products/download/Download_WE-PD_1260_STP%20%28rev1%29.stp",
 			}}
 			name="L4"
-			pcbX={-10.22}
-			pcbY={-8.3504}
+			pcbX={-10.62}
+			pcbY={-9.8504}
 			pcbRotation={-90}
 			schSheetName="amplifier_output"
 			schX={-3.94}
@@ -413,7 +301,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			footprint="res0603"
 			name="R1"
 			pcbX={-7.5375}
-			pcbY={16.7121}
+			pcbY={18}
 			pcbRotation={0}
 			schSheetName="amplifier_output"
 			schX={5.8136}
@@ -461,7 +349,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			footprint="res0603"
 			name="R4"
 			pcbX={-7.58}
-			pcbY={-16.4829}
+			pcbY={-17.8}
 			pcbRotation={-180}
 			schSheetName="amplifier_output"
 			schX={5.8136}
@@ -512,8 +400,8 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			pcbY={0.5896}
 			pcbRotation={0}
 			schSheetName="amplifier_core"
-			schX={0.6}
-			schY={-1.8356}
+			schX={0.73}
+			schY={-1.84}
 			schOrientation="horizontal"
 			connections={{
 				pin1: "net.Net_U1_GAIN_slash_SLV",
@@ -528,8 +416,8 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			pcbY={7}
 			pcbRotation={0}
 			schSheetName="amplifier_core"
-			schX={-5.58}
-			schY={-1.8356}
+			schX={-5.68}
+			schY={-1.84}
 			schOrientation="horizontal"
 			connections={{
 				pin1: "net.GND",
@@ -544,9 +432,9 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			pcbY={15.4696}
 			pcbRotation={-90}
 			schSheetName="mcu"
-			schX={8.5288}
-			schY={-1.8196}
-			schOrientation="vertical"
+			schX={5.4}
+			schY={-0.2956}
+			schOrientation="horizontal"
 			connections={{
 				pin1: "net.GND",
 				pin2: "net.Net_D4_K",
@@ -560,9 +448,9 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			pcbY={15.4696}
 			pcbRotation={-90}
 			schSheetName="mcu"
-			schX={12.4912}
-			schY={-4.8676}
-			schOrientation="vertical"
+			schX={9.4}
+			schY={-3.9532}
+			schOrientation="horizontal"
 			connections={{
 				pin1: "net.GND",
 				pin2: "net.Net_D5_K",
@@ -576,9 +464,9 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			pcbY={15.4696}
 			pcbRotation={-90}
 			schSheetName="mcu"
-			schX={9.748}
-			schY={-5.4772}
-			schOrientation="vertical"
+			schX={6.7}
+			schY={-4.5628}
+			schOrientation="horizontal"
 			connections={{
 				pin1: "net.GND",
 				pin2: "net.Net_D6_K",
@@ -592,9 +480,9 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			pcbY={15.4696}
 			pcbRotation={-90}
 			schSheetName="mcu"
-			schX={5.176}
-			schY={-1.8196}
-			schOrientation="vertical"
+			schX={2}
+			schY={-0.9052}
+			schOrientation="horizontal"
 			connections={{
 				pin1: "net.GND",
 				pin2: "net.Net_D7_K",
@@ -700,13 +588,13 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			capacitance="220nF"
 			footprint="cap0805"
 			name="C7"
-			pcbX={-17.92}
+			pcbX={-18.8}
 			pcbY={2.2496}
-			pcbRotation={90}
+			pcbRotation={-90}
 			schSheetName="amplifier_output"
 			schX={-10.6456}
 			schY={4.6076}
-			schOrientation="horizontal"
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.Net_U1_BSPR",
 				pin2: "net.Net_U1_OUTPR",
@@ -718,11 +606,11 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			name="C8"
 			pcbX={-20.77}
 			pcbY={1.9246}
-			pcbRotation={-90}
+			pcbRotation={90}
 			schSheetName="amplifier_output"
 			schX={-10.6456}
 			schY={2.1692}
-			schOrientation="horizontal"
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.Net_U1_BSNR",
 				pin2: "net.Net_U1_OUTNR",
@@ -734,11 +622,11 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			name="C9"
 			pcbX={-20.77}
 			pcbY={-2.0429}
-			pcbRotation={90}
+			pcbRotation={-90}
 			schSheetName="amplifier_output"
 			schX={-10.6456}
 			schY={0.95}
-			schOrientation="horizontal"
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.Net_U1_BSPL",
 				pin2: "net.Net_U1_OUTPL",
@@ -748,13 +636,13 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			capacitance="220nF"
 			footprint="cap0805"
 			name="C10"
-			pcbX={-17.97}
+			pcbX={-18.8}
 			pcbY={-2.4754}
-			pcbRotation={-90}
+			pcbRotation={90}
 			schSheetName="amplifier_output"
 			schX={-10.6456}
 			schY={-1.4884}
-			schOrientation="horizontal"
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.Net_U1_BSNL",
 				pin2: "net.Net_U1_OUTNL",
@@ -765,7 +653,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			footprint="cap0805"
 			name="C11"
 			pcbX={-10.38}
-			pcbY={18.7796}
+			pcbY={19.05}
 			pcbRotation={-90}
 			schSheetName="amplifier_output"
 			schX={-2.7208}
@@ -813,7 +701,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			footprint="cap0805"
 			name="C14"
 			pcbX={-10.58}
-			pcbY={-18.9829}
+			pcbY={-19.25}
 			pcbRotation={90}
 			schSheetName="amplifier_output"
 			schX={-2.7208}
@@ -829,7 +717,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			footprint="cap0603"
 			name="C15"
 			pcbX={-8.38}
-			pcbY={19.3796}
+			pcbY={20.3}
 			pcbRotation={-90}
 			schSheetName="amplifier_output"
 			schX={3.3752}
@@ -877,7 +765,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			footprint="cap0603"
 			name="C18"
 			pcbX={-8.505}
-			pcbY={-18.9829}
+			pcbY={-20.1}
 			pcbRotation={90}
 			schSheetName="amplifier_output"
 			schX={3.3752}
@@ -893,7 +781,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			footprint="cap0603"
 			name="C19"
 			pcbX={-6.58}
-			pcbY={19.3796}
+			pcbY={20.3}
 			pcbRotation={-90}
 			schSheetName="amplifier_output"
 			schX={5.8136}
@@ -941,7 +829,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			footprint="cap0603"
 			name="C22"
 			pcbX={-6.655}
-			pcbY={-18.9954}
+			pcbY={-20.1}
 			pcbRotation={90}
 			schSheetName="amplifier_output"
 			schX={5.8136}
@@ -960,9 +848,9 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			pcbY={4.6896}
 			pcbRotation={0}
 			schSheetName="amplifier_core"
-			schX={-2.1856}
-			schY={0.6028}
-			schOrientation="horizontal"
+			schX={-1.86}
+			schY={0.6}
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.IN_POSITIVE_RIGHT",
 				pin2: "net.Net_U1_INPR",
@@ -976,9 +864,9 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			pcbY={2.5396}
 			pcbRotation={0}
 			schSheetName="amplifier_core"
-			schX={-2.1856}
-			schY={-0.3116}
-			schOrientation="horizontal"
+			schX={-2.51}
+			schY={-0.31}
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.GND",
 				pin2: "net.Net_U1_INNR",
@@ -992,9 +880,9 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			pcbY={-3.4804}
 			pcbRotation={0}
 			schSheetName="amplifier_core"
-			schX={-2.1856}
-			schY={-3.3596}
-			schOrientation="horizontal"
+			schX={-2.51}
+			schY={-3.36}
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.IN_POSITIVE_LEFT",
 				pin2: "net.Net_U1_INPL",
@@ -1008,9 +896,9 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			pcbY={-5.5004}
 			pcbRotation={0}
 			schSheetName="amplifier_core"
-			schX={-2.1856}
-			schY={-4.274}
-			schOrientation="horizontal"
+			schX={-1.86}
+			schY={-4.27}
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.GND",
 				pin2: "net.Net_U1_INNL",
@@ -1026,7 +914,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			schSheetName="amplifier_core"
 			schX={-3.1}
 			schY={-1.226}
-			schOrientation="horizontal"
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.Net_U1_GVDD",
 				pin2: "net.GND",
@@ -1203,7 +1091,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			schSheetName="dac"
 			schX={2.7136}
 			schY={-3.9596}
-			schOrientation="horizontal"
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.Net_U2_LDOO",
 				pin2: "net.GND",
@@ -1219,7 +1107,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			schSheetName="dac"
 			schX={3.628}
 			schY={-4.5692}
-			schOrientation="horizontal"
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.Net_U2_VNEG",
 				pin2: "net.GND",
@@ -1337,7 +1225,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			schSheetName="mcu"
 			schX={-12.5024}
 			schY={2.1428}
-			schOrientation="horizontal"
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.GND",
 				pin2: "net.ESP_EN",
@@ -1370,7 +1258,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			name="J3"
 			pcbX={57.5315}
 			pcbY={-6.5214}
-			pcbRotation={-90}
+			pcbRotation={90}
 			schSheetName="usb_uart"
 			schX={-9.948}
 			schY={2.4468}
@@ -1533,7 +1421,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			schSheetName="charger"
 			schX={5.348}
 			schY={-0.1292}
-			schOrientation="horizontal"
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.V_BATT",
 				pin2: "net.GND",
@@ -1582,9 +1470,9 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			pcbY={-12.0964}
 			pcbRotation={0}
 			schSheetName="charger"
-			schX={-3.1864}
+			schX={-3}
 			schY={-0.1292}
-			schOrientation="vertical"
+			schOrientation="horizontal"
 			connections={{
 				pin1: "net.Net_D2_K",
 				pin2: "net.Net_D2_A",
@@ -1598,9 +1486,9 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			pcbY={-15.5264}
 			pcbRotation={0}
 			schSheetName="charger"
-			schX={-3.1864}
+			schX={-3}
 			schY={1.09}
-			schOrientation="vertical"
+			schOrientation="horizontal"
 			connections={{
 				pin1: "net.Net_D3_K",
 				pin2: "net.Net_D2_A",
@@ -1616,7 +1504,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			schSheetName="mcu"
 			schX={6.7}
 			schY={-0.2956}
-			schOrientation="vertical"
+			schOrientation="horizontal"
 			connections={{
 				pin1: "net.Net_D4_K",
 				pin2: "net.Net_D4_A",
@@ -1632,7 +1520,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			schSheetName="mcu"
 			schX={10.6624}
 			schY={-3.9532}
-			schOrientation="vertical"
+			schOrientation="horizontal"
 			connections={{
 				pin1: "net.Net_D5_K",
 				pin2: "net.Net_D5_A",
@@ -1648,7 +1536,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			schSheetName="mcu"
 			schX={7.9192}
 			schY={-4.5628}
-			schOrientation="vertical"
+			schOrientation="horizontal"
 			connections={{
 				pin1: "net.Net_D6_K",
 				pin2: "net.Net_D6_A",
@@ -1664,7 +1552,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			schSheetName="mcu"
 			schX={3.3472}
 			schY={-0.9052}
-			schOrientation="vertical"
+			schOrientation="horizontal"
 			connections={{
 				pin1: "net.Net_D7_K",
 				pin2: "net.Net_D7_A",
@@ -1710,8 +1598,8 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			pcbY={-13.4364}
 			pcbRotation={0}
 			schSheetName="charger"
-			schX={-3.172}
-			schY={-1.3484}
+			schX={-4.5}
+			schY={-0.1292}
 			schOrientation="horizontal"
 			connections={{
 				pin1: "net.Net_U6_CHRG",
@@ -1726,8 +1614,8 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			pcbY={-15.4364}
 			pcbRotation={0}
 			schSheetName="charger"
-			schX={-2.272}
-			schY={-1.958}
+			schX={-4.5}
+			schY={1.09}
 			schOrientation="horizontal"
 			connections={{
 				pin1: "net.Net_U6_STDBY",
@@ -2018,7 +1906,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			capacitance="0.1uF"
 			footprint="cap0805"
 			name="C45"
-			pcbX={31.6525}
+			pcbX={29.6525}
 			pcbY={9.1946}
 			pcbRotation={-180}
 			schSheetName="boost"
@@ -2073,7 +1961,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			schSheetName="boost"
 			schX={-3.3488}
 			schY={-5.1796}
-			schOrientation="horizontal"
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.GND",
 				pin2: "net.Net_U7_VCC",
@@ -2085,11 +1973,11 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			name="C49"
 			pcbX={30.625}
 			pcbY={1.0946}
-			pcbRotation={90}
+			pcbRotation={-90}
 			schSheetName="boost"
 			schX={8.8432}
 			schY={-0.3028}
-			schOrientation="horizontal"
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.Net_U7_SS",
 				pin2: "net.GND",
@@ -2105,7 +1993,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			schSheetName="boost"
 			schX={10.0624}
 			schY={1.8308}
-			schOrientation="horizontal"
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.Net_U7_COMP",
 				pin2: "net.GND",
@@ -2121,7 +2009,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			schSheetName="boost"
 			schX={11.8912}
 			schY={2.7452}
-			schOrientation="horizontal"
+			schOrientation="vertical"
 			connections={{
 				pin1: "net.Net_C51_Pad1",
 				pin2: "net.GND",

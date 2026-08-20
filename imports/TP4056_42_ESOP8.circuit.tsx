@@ -15,18 +15,17 @@ const pinLabels = {
 export const TP4056_42_ESOP8 = (props: ChipProps<typeof pinLabels>) => {
 	return (
 		<chip
-			schWidth={2.2}
-			schHeight={2.5}
+			schWidth={2}
+			schHeight={1}
 			schPinArrangement={{
 				leftSide: {
 					direction: "top-to-bottom",
-					pins: ["VCC", "CE", "TEMP", "PROG"],
+					pins: ["VCC", "CE", "TEMP", "PROG", "GND"],
 				},
 				rightSide: {
 					direction: "top-to-bottom",
-					pins: ["BAT", "CHRG", "STDBY"],
+					pins: ["BAT", "CHRG", "STDBY", "EP"],
 				},
-				bottomSide: { direction: "left-to-right", pins: ["GND", "EP"] },
 			}}
 			pinLabels={pinLabels}
 			supplierPartNumbers={{

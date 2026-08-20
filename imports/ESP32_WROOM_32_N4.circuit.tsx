@@ -45,8 +45,8 @@ const pinLabels = {
 export const ESP32_WROOM_32_N4 = (props: ChipProps<typeof pinLabels>) => {
 	return (
 		<chip
-			schWidth={3.4}
-			schHeight={6.4}
+			schWidth={2.4}
+			schHeight={4}
 			schPinArrangement={{
 				leftSide: {
 					direction: "top-to-bottom",
@@ -60,6 +60,16 @@ export const ESP32_WROOM_32_N4 = (props: ChipProps<typeof pinLabels>) => {
 						"pin20",
 						"pin21",
 						"pin22",
+						"3V3",
+						"GND1",
+						"GND2",
+						"GND3",
+						"GND4",
+						"NC",
+						"IO32",
+						"IO33",
+						"IO34",
+						"IO35",
 					],
 				},
 				rightSide: {
@@ -85,16 +95,7 @@ export const ESP32_WROOM_32_N4 = (props: ChipProps<typeof pinLabels>) => {
 						"IO25",
 						"IO26",
 						"IO27",
-						"IO32",
-						"IO33",
-						"IO34",
-						"IO35",
 					],
-				},
-				topSide: { direction: "left-to-right", pins: ["3V3"] },
-				bottomSide: {
-					direction: "left-to-right",
-					pins: ["GND1", "GND2", "GND3", "GND4", "NC"],
 				},
 			}}
 			pinLabels={pinLabels}

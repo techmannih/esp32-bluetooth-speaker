@@ -27,24 +27,39 @@ const pinLabels = {
 export const TPS61088RHLR = (props: ChipProps<typeof pinLabels>) => {
 	return (
 		<chip
-			schWidth={2.8}
-			schHeight={4.2}
+			schWidth={2}
+			schHeight={2.2}
 			schPinArrangement={{
 				leftSide: {
 					direction: "top-to-bottom",
-					pins: ["VIN", "EN", "FSW", "MODE", "BOOT", "VCC"],
+					pins: [
+						"VIN",
+						"EN",
+						"FSW",
+						"MODE",
+						"BOOT",
+						"VCC",
+						"AGND",
+						"PGND",
+						"NC1",
+						"NC2",
+					],
 				},
 				rightSide: {
 					direction: "top-to-bottom",
-					pins: ["VOUT1", "VOUT2", "VOUT3", "FB", "COMP", "ILIM", "SS"],
-				},
-				topSide: {
-					direction: "left-to-right",
-					pins: ["SW1", "SW2", "SW3", "SW4"],
-				},
-				bottomSide: {
-					direction: "left-to-right",
-					pins: ["AGND", "PGND", "NC1", "NC2"],
+					pins: [
+						"VOUT1",
+						"VOUT2",
+						"VOUT3",
+						"FB",
+						"COMP",
+						"ILIM",
+						"SS",
+						"SW1",
+						"SW2",
+						"SW3",
+						"SW4",
+					],
 				},
 			}}
 			pinLabels={pinLabels}
@@ -255,6 +270,7 @@ export const TPS61088RHLR = (props: ChipProps<typeof pinLabels>) => {
 						outerDiameter="0.3999992mm"
 						holeDiameter="0.1999996mm"
 						layers={["top", "bottom"]}
+						connectsTo="net.GND"
 					/>
 					<via
 						pcbX="-0.5230368mm"
@@ -262,6 +278,7 @@ export const TPS61088RHLR = (props: ChipProps<typeof pinLabels>) => {
 						outerDiameter="0.3999992mm"
 						holeDiameter="0.1999996mm"
 						layers={["top", "bottom"]}
+						connectsTo="net.GND"
 					/>
 					<via
 						pcbX="1.2770612mm"
@@ -269,6 +286,7 @@ export const TPS61088RHLR = (props: ChipProps<typeof pinLabels>) => {
 						outerDiameter="0.3999992mm"
 						holeDiameter="0.1999996mm"
 						layers={["top", "bottom"]}
+						connectsTo="net.GND"
 					/>
 					<via
 						pcbX="-1.2730988mm"
@@ -276,6 +294,7 @@ export const TPS61088RHLR = (props: ChipProps<typeof pinLabels>) => {
 						outerDiameter="0.3999992mm"
 						holeDiameter="0.1999996mm"
 						layers={["top", "bottom"]}
+						connectsTo="net.GND"
 					/>
 					<via
 						pcbX="0.5269992mm"
@@ -283,6 +302,7 @@ export const TPS61088RHLR = (props: ChipProps<typeof pinLabels>) => {
 						outerDiameter="0.3999992mm"
 						holeDiameter="0.1999996mm"
 						layers={["top", "bottom"]}
+						connectsTo="net.GND"
 					/>
 					<via
 						pcbX="-0.5230368mm"
@@ -290,6 +310,7 @@ export const TPS61088RHLR = (props: ChipProps<typeof pinLabels>) => {
 						outerDiameter="0.3999992mm"
 						holeDiameter="0.1999996mm"
 						layers={["top", "bottom"]}
+						connectsTo="net.GND"
 					/>
 					<via
 						pcbX="0.5269992mm"
@@ -297,6 +318,7 @@ export const TPS61088RHLR = (props: ChipProps<typeof pinLabels>) => {
 						outerDiameter="0.3999992mm"
 						holeDiameter="0.1999996mm"
 						layers={["top", "bottom"]}
+						connectsTo="net.GND"
 					/>
 					<via
 						pcbX="-0.5230368mm"
@@ -304,6 +326,7 @@ export const TPS61088RHLR = (props: ChipProps<typeof pinLabels>) => {
 						outerDiameter="0.3999992mm"
 						holeDiameter="0.1999996mm"
 						layers={["top", "bottom"]}
+						connectsTo="net.GND"
 					/>
 					<silkscreenpath
 						route={[

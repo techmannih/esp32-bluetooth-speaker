@@ -22,12 +22,12 @@ const pinLabels = {
 export const CH340C = (props: ChipProps<typeof pinLabels>) => {
 	return (
 		<chip
-			schWidth={2.2}
-			schHeight={3.4}
+			schWidth={1.9}
+			schHeight={1.6}
 			schPinArrangement={{
 				leftSide: {
 					direction: "top-to-bottom",
-					pins: ["D_POS", "D_NEG", "R232", "V3", "GND"],
+					pins: ["D_POS", "D_NEG", "R232", "V3", "GND", "VCC", "OUT", "pin7"],
 				},
 				rightSide: {
 					direction: "top-to-bottom",
@@ -40,11 +40,8 @@ export const CH340C = (props: ChipProps<typeof pinLabels>) => {
 						"DSR",
 						"DCD",
 						"RI",
-						"OUT",
-						"pin7",
 					],
 				},
-				topSide: { direction: "left-to-right", pins: ["VCC"] },
 			}}
 			pinLabels={pinLabels}
 			supplierPartNumbers={{

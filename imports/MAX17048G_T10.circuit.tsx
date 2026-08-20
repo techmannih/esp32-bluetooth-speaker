@@ -15,15 +15,17 @@ const pinLabels = {
 export const MAX17048G_T10 = (props: ChipProps<typeof pinLabels>) => {
 	return (
 		<chip
-			schWidth={2.4}
-			schHeight={2.2}
+			schWidth={2}
+			schHeight={1}
 			schPinArrangement={{
 				leftSide: {
 					direction: "top-to-bottom",
-					pins: ["CELL", "VDD", "QSTRT", "CTG"],
+					pins: ["CELL", "VDD", "QSTRT", "CTG", "GND"],
 				},
-				rightSide: { direction: "top-to-bottom", pins: ["SDA", "SCL", "ALRT"] },
-				bottomSide: { direction: "left-to-right", pins: ["GND", "EP"] },
+				rightSide: {
+					direction: "top-to-bottom",
+					pins: ["SDA", "SCL", "ALRT", "EP"],
+				},
 			}}
 			pinLabels={pinLabels}
 			supplierPartNumbers={{

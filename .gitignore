@@ -28,3 +28,4 @@ yarn-error.log*
 # tscircuit cache
 .tscircuit/
 checks/
+.dist/
