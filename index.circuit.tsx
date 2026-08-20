@@ -1,10 +1,12 @@
 import "tscircuit";
 
 import { B2B_PH_K_S_LF__SN_ } from "./imports/B2B_PH_K_S_LF__SN_.circuit";
+import { CDRH127NP_1R2NC } from "./imports/CDRH127NP_1R2NC";
 import { CH340C } from "./imports/CH340C.circuit";
 import { ESP32_WROOM_32_N4 } from "./imports/ESP32_WROOM_32_N4.circuit";
 import { MAX17048G_T10 } from "./imports/MAX17048G_T10.circuit";
 import { PCM5100APWR } from "./imports/PCM5100APWR.circuit";
+import { PSPHAQ127_100M } from "./imports/PSPHAQ127_100M";
 import { S2B_XH_A_LF__SN_ } from "./imports/S2B_XH_A_LF__SN_.circuit";
 import { TP4056_42_ESOP8 } from "./imports/TP4056_42_ESOP8.circuit";
 import { TPA3116D2DAD } from "./imports/TPA3116D2DAD.circuit";
@@ -216,17 +218,11 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 				pin2: "net.Net_J2_Pin_2",
 			}}
 		/>
-		<inductor
-			inductance="10uH"
-			footprint="kicad:Inductor_SMD/L_12x12mm_H6mm"
-			cadModel={{
-				stepUrl:
-					"https://www.we-online.com/components/products/download/Download_WE-PD_1260_STP%20%28rev1%29.stp",
-			}}
+		<PSPHAQ127_100M
 			name="L1"
 			pcbX={-10.745}
 			pcbY={9.6246}
-			pcbRotation={90}
+			pcbRotation={180}
 			schSheetName="amplifier_output"
 			schX={-4.2448}
 			schY={9.1796}
@@ -236,17 +232,11 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 				pin2: "net.Net_J1_Pin_1",
 			}}
 		/>
-		<inductor
-			inductance="10uH"
-			footprint="kicad:Inductor_SMD/L_12x12mm_H6mm"
-			cadModel={{
-				stepUrl:
-					"https://www.we-online.com/components/products/download/Download_WE-PD_1260_STP%20%28rev1%29.stp",
-			}}
+		<PSPHAQ127_100M
 			name="L2"
 			pcbX={3.105}
 			pcbY={-8.3254}
-			pcbRotation={-90}
+			pcbRotation={0}
 			schSheetName="amplifier_output"
 			schX={-4.2448}
 			schY={-1.1836}
@@ -256,17 +246,11 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 				pin2: "net.Net_J2_Pin_1",
 			}}
 		/>
-		<inductor
-			inductance="10uH"
-			footprint="kicad:Inductor_SMD/L_12x12mm_H6mm"
-			cadModel={{
-				stepUrl:
-					"https://www.we-online.com/components/products/download/Download_WE-PD_1260_STP%20%28rev1%29.stp",
-			}}
+		<PSPHAQ127_100M
 			name="L3"
 			pcbX={2.93}
 			pcbY={8.6246}
-			pcbRotation={90}
+			pcbRotation={180}
 			schSheetName="amplifier_output"
 			schX={-4.2448}
 			schY={3.6932}
@@ -276,17 +260,11 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 				pin2: "net.Net_J1_Pin_2",
 			}}
 		/>
-		<inductor
-			inductance="10uH"
-			footprint="kicad:Inductor_SMD/L_12x12mm_H6mm"
-			cadModel={{
-				stepUrl:
-					"https://www.we-online.com/components/products/download/Download_WE-PD_1260_STP%20%28rev1%29.stp",
-			}}
+		<PSPHAQ127_100M
 			name="L4"
 			pcbX={-10.62}
 			pcbY={-9.8504}
-			pcbRotation={-90}
+			pcbRotation={0}
 			schSheetName="amplifier_output"
 			schX={-3.94}
 			schY={-6.67}
@@ -1283,7 +1261,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 		/>
 		<transistor
 			type="npn"
-			footprint="sot23"
+			footprint="sot23_3p"
 			manufacturerPartNumber="BC817"
 			name="Q1"
 			pcbX={60.8025}
@@ -1300,7 +1278,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 		/>
 		<transistor
 			type="npn"
-			footprint="sot23"
+			footprint="sot23_3p"
 			manufacturerPartNumber="BC817"
 			name="Q2"
 			pcbX={51.22}
@@ -1659,7 +1637,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 		<mosfet
 			channelType="p"
 			mosfetMode="enhancement"
-			footprint="sot23"
+			footprint="sot23_3p"
 			manufacturerPartNumber="DMG2301L-7"
 			name="Q3"
 			pcbX={47.7775}
@@ -1802,17 +1780,11 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 				pin2: "net.V_BATT",
 			}}
 		/>
-		<inductor
-			inductance="1.2uH"
-			footprint="kicad:Inductor_SMD/L_12x12mm_H6mm"
-			cadModel={{
-				stepUrl:
-					"https://www.we-online.com/components/products/download/Download_WE-PD_1260_STP%20%28rev1%29.stp",
-			}}
+		<CDRH127NP_1R2NC
 			name="L5"
 			pcbX={35.63}
-			pcbY={17.1096}
-			pcbRotation={180}
+			pcbY={16.25}
+			pcbRotation={90}
 			schSheetName="boost"
 			schX={-7.3112}
 			schY={2.4404}
@@ -1826,9 +1798,9 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			resistance="255k"
 			footprint="res1210"
 			name="R20"
-			pcbX={36.825}
-			pcbY={6.1946}
-			pcbRotation={0}
+			pcbX={38.8}
+			pcbY={6.4}
+			pcbRotation={90}
 			schSheetName="boost"
 			schX={-3.044}
 			schY={1.526}
@@ -1858,7 +1830,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			resistance="49.9k"
 			footprint="res1210"
 			name="R22"
-			pcbX={41.92}
+			pcbX={42.1}
 			pcbY={2.2796}
 			pcbRotation={-90}
 			schSheetName="boost"
@@ -1907,7 +1879,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			footprint="cap0805"
 			name="C45"
 			pcbX={29.6525}
-			pcbY={9.1946}
+			pcbY={8.45}
 			pcbRotation={-180}
 			schSheetName="boost"
 			schX={-10.3592}
@@ -1922,8 +1894,8 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			capacitance="10uF"
 			footprint="cap1210"
 			name="C46"
-			pcbX={31.675}
-			pcbY={6.1746}
+			pcbX={31.4}
+			pcbY={5.9}
 			pcbRotation={-180}
 			schSheetName="boost"
 			schX={-8.5304}
@@ -1939,7 +1911,7 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			footprint="cap0805"
 			name="C47"
 			pcbX={35.485}
-			pcbY={9.1946}
+			pcbY={7.8}
 			pcbRotation={-180}
 			schSheetName="boost"
 			schX={-3.3488}
@@ -2067,19 +2039,6 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 				pin8: "net.FG_SDA",
 			}}
 			noConnect={["pin5"]}
-		/>
-
-		<silkscreentext
-			text="(〜￣▽￣)〜"
-			fontSize="1mm"
-			pcbX={49.25}
-			pcbY={-21.7404}
-		/>
-		<silkscreentext
-			text={"Designed by\nM. Salah\nBaayou"}
-			fontSize="1.3mm"
-			pcbX={50.64}
-			pcbY={-18.6604}
 		/>
 	</board>
 );
