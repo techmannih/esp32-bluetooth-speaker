@@ -1768,6 +1768,11 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 			currentRating="15A"
 			voltageRating="32V"
 			footprint="kicad:Fuse/Fuseholder_Cylinder-6.3x32mm_Schurter_0031-8002_Horizontal_Open"
+			cadModel={{
+				stepUrl:
+					"https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Fuse.3dshapes/Fuseholder_Cylinder-6.3x32mm_Schurter_0031-8002_Horizontal_Open.step",
+				modelOriginPosition: { x: 18.75, y: 0, z: 0 },
+			}}
 			name="F1"
 			pcbX={20.03}
 			pcbY={18.9996}
