@@ -1,0 +1,25 @@
+{
+  "name": "esp32-hifi-bluetooth-speaker-pcb-board",
+  "version": "1.0.0",
+  "description": "Source-verified tscircuit clone of the ESP32 HiFi Bluetooth speaker board",
+  "main": "index.circuit.tsx",
+  "keywords": [
+    "tscircuit",
+    "circuit",
+    "pcb",
+    "electronics"
+  ],
+  "scripts": {
+    "dev": "tsci dev",
+    "build": "tsci build",
+		"snapshot": "tsci snapshot --3d --camera-preset top-center-angled",
+		"snapshot:update": "tsci snapshot --3d --update --camera-preset top-center-angled",
+    "start": "tsci dev",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "tscircuit": "^0.0.2297",
+    "typescript": "^5.9.3"
+  }
+}
