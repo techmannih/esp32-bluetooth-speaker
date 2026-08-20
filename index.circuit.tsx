@@ -31,7 +31,6 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 		thickness="1.58mm"
 		material="fr4"
 		layers={4}
-		isViaInPadAllowed
 		solderMaskColor="#176b43"
 	>
 		<schematicsheet
@@ -1252,7 +1251,6 @@ export const ESP32HiFiBluetoothSpeaker = () => (
 				pin10: "net.USB_DP",
 				pin12: "net.Net_J3_CC2",
 				pin13: "net.GND",
-
 				pin14: "net.GND",
 				pin15: "net.V_USB",
 				pin16: "net.V_USB",
